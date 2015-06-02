@@ -20,4 +20,8 @@ android {
 }
 
 dependencies {
+  compile ('com.google.android.gms:play-services:7.5.0') {
+    exclude group: 'com.google.android.gms', module: 'play-services-cast'
+    exclude group: 'com.google.android.gms', module: 'play-services-ads'
+  }
 }
